@@ -3,12 +3,15 @@ import { getAuth } from "firebase/auth";
 import { authContext } from '../MainLayout/MainLayout';
 
 const About = () => {
+    const {user, setUser} = useContext(authContext)
 
     const value = useContext(authContext)
     console.log(value);
     return (
         <div>
-            <h1>ABout page</h1>
+            {user?.displayName}
+            {user?.email}
+
         </div>
     );
 };

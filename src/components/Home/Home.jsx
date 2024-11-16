@@ -8,9 +8,9 @@ const Home = () => {
     
     return (
         <div>
-            <button onClick={handleGoogleLogin}>Log In</button>
-            <button onClick={handleGithubLogin}>Github Log In</button>
-            <button onClick={handleLogOut}>Log Out</button>
+            <button className='btn' onClick={handleGoogleLogin}>Log In</button>
+            <button className='btn' onClick={handleGithubLogin}>Github Log In</button>
+            <button className='btn' onClick={handleLogOut}>Log Out</button>
 
         </div>
     );

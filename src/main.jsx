@@ -14,6 +14,10 @@ import './index.css';
 
 // Create a context (Assuming it's required for your app)
 import { createContext } from 'react';
+import LogIn from './components/LogIn/LogIn.jsx';
+import Register from './components/Register/Register.jsx';
+import Profile from './components/Profile/Profile.jsx';
+
 // export const authContext = createContext();
 
 // Define Routes
@@ -30,6 +34,18 @@ const router = createBrowserRouter([
         path: '/about',
         element: <About />,
       },
+      {
+        path: '/register',
+        element: <Register />,
+      },
+      {
+        path: '/login',
+        element: <LogIn />,
+      },
+      {
+        path: '/profile',
+        element: <Profile></Profile>,
+      }
     ],
   },
 ]);
